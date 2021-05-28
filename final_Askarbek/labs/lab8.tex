@@ -1,0 +1,91 @@
+
+\chapter{Lab8}
+\onecolumn
+\begin{flushleft}
+38 \ \ Chapter 2 Differential Calculus of Functions of One Variable
+
+satisfies the inequality
+
+$$
+| f(x) | < \epsilon
+$$
+
+
+if $0 < x < \delta = \epsilon / 2 $ . However, this does not mean that $\lim_{x \rightarrow 0} f(x) = 0 $ since $f$ is
+not defined for negative $x$, as it must be to satisfy the conditions of Definition 2.1.2 with
+$x_0 = 0 $ and $L=0$ . The function
+
+$$
+g(x) = x +  \frac{|x|}{x}  ,   \neq  0 ,
+$$
+
+can be rewritten as
+
+$$
+g(x)  x =
+\begin{cases}
+x+1 & x > 0\\
+x-1 & x < 0
+\end{cases}
+$$
+
+hence, every open interval containing $x_0 =0 $ also contains points x1 and x2 such that
+$|g(x_1)- g(x_2) |$ is as close to 2 as we please. Therefore, $\lim_{x \rightarrow x_0} g(x)$ does not exist
+(Exercise 26)
+
+
+Although $f(x)$ and $g(x)$ do not approach limits as x approaches zero, they each exhibit
+a definite sort of limiting behavior for small positive values of $x$, as does $g(x)$ for small
+negative values of $x$. The kind of behavior we have in mind is defined precisely as follows.
+
+
+\begin{figure}
+    \centering
+    \setlength{\unitlength}{0.2mm}
+\begin{picture}(400,250)
+
+\put(0,200){\thicklines{\vector(1,0){400}}}
+\put(50,150){\thicklines{\vector(0,0){300}}}
+
+\multiput(50,420)(15,0){15}{\line(1,0){9}}
+\multiput(50,390)(15,0){15}{\line(1,0){9}}
+
+\multiput(270,200)(0,15){15}{\line(0,1){9}}
+
+
+\qbezier(270,420)(290,450)(340,470)
+
+\qbezier(270,390)(190,333)(190,290)
+
+\put(30,420){$\mu$}
+\put(30,380){$\lambda$}
+\put(330,430){$y = f(x)$}
+\put(270,180){$x_0$}
+\put(300,150){$\lim_{x \rightarrow x_0 +}   f(x) =  \mu $}
+\put(100,150){$\lim_{x \rightarrow x_0 +}   f(x) =  \mu $}
+
+
+\end{picture}
+    \caption{Figure 2.1.2}
+    \label{fig:label}
+\end{figure}
+
+
+
+\textbf{Definition 2.1.2}
+
+ We say that $f(x)$ approaches the left-hand limit $L$ as $x$ approaches $x_0$ from the left,
+and write
+
+$$
+\lim_{x \rightarrow x_0} f(x) = L.
+$$
+
+
+if $f$ is defined on some open interval $(a,x_0)$ and, for each $\epsilon > 0$, there is a $ \delta > 0$
+such that
+
+$$
+|f(x) - L| < \epsilon \text{ if }  x_0 - \delta < x < x_0.
+$$
+\end{flushleft}

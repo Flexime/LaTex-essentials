@@ -1,0 +1,141 @@
+\onecolumn
+\chapter{Lab4}
+\begin{flushleft}
+Next, let us turn to 2 × 2 matrices, of the form
+
+
+\begin{equation*}
+A = 
+\begin{pmatrix}
+a & b \\
+c & d 
+\end{pmatrix}
+\end{equation*}
+
+
+
+We shall use elementary row operations to find out when the matrix A is invertible. So we consider the
+array
+
+
+
+
+\begin{equation*}\label{a19}
+(A|I2)  = 
+\begin{pmatrix}
+a & b & 1 & 0 \\
+c & d & 0 & 1
+\end{pmatrix}
+\eqno(1)
+\end{equation*}
+
+
+
+and try to use elementary row operations to reduce the left hand half of the array to $I2$. Suppose first
+of all that $a = c = 0$. Then the array becomes
+
+
+
+\begin{equation*}
+\begin{pmatrix}
+0 & b & 1 & 0 \\
+c & d & 0 & 1
+\end{pmatrix}
+\end{equation*}
+
+
+
+
+and so it is impossible to reduce the left hand half of the array by elementary row operations to the
+matrix $I_{2}$. Consider next the case $a \neq 0$. Multiplying row 2 of the array (\ref{a19}) by $a$, we obtain
+
+
+
+\begin{equation*}
+\begin{pmatrix}
+a & b & 1 & 0 \\
+ac & ad & 0 & a
+\end{pmatrix}
+\end{equation*}
+
+
+
+Adding $-c$ times row $1$ to row $2$, we obtain
+
+
+
+\begin{equation*}\label{a20}
+\begin{pmatrix}
+a & b & 1 & 0 \\
+0 & ad-bc & -c & a
+\end{pmatrix}
+\eqno(2)
+\end{equation*}
+
+
+
+If $D = ad - bc = 0$, then this becomes
+
+
+
+\begin{equation*}
+\begin{pmatrix}
+a & b & 1 & 0 \\
+0 & 0 & -c & a
+\end{pmatrix}
+\end{equation*}
+
+
+and so it is impossible to reduce the left hand half of the array by elementary row operations to the
+matrix $I_{2}$. On the other hand, if $D = ad - bc \neq 0$, then the array (\ref{a19}) can be reduced by elementary row
+operations to
+
+
+
+\begin{equation*}
+\begin{pmatrix}
+1 & 0 & d/D & -b/D \\
+0 & 1 & -c/D & a/D
+\end{pmatrix}
+\end{equation*}
+
+
+
+so that
+
+\begin{equation*}
+A^{-1} = \frac{1}{ad-bc}
+\begin{pmatrix}
+d & -b \\
+-c & a 
+\end{pmatrix}
+\end{equation*}
+
+
+
+
+
+
+Consider finally the case $ c \neq 0$. Interchanging rows 1 and 2 of the array (\ref{a20}), we obtain
+
+
+\begin{equation*}
+\begin{pmatrix}
+c & d & 0 & 1 \\
+ac & bc & c & 0
+\end{pmatrix}
+\end{equation*}
+
+
+
+Adding $-a$ times row $1$ to row $2$, we obtain
+\end{flushleft}
+
+\begin{equation*}
+\begin{pmatrix}
+c & d & 0 & 1 \\
+0 & bc-ad & c & -a
+\end{pmatrix}
+\end{equation*}
+
+

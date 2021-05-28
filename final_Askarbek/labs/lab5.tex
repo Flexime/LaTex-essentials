@@ -1,0 +1,187 @@
+\chapter{Lab5}
+\begin{flushleft}
+
+
+146 Chapter 3 Integral Calculus of Functions of One Variable
+
+is an antiderivative of $f(\phi(t) \phi' (t) $ on  $[c,d]$
+and \ref{t219} implies that
+
+\begin{equation}
+  \int_c^d   f(\phi(t))\phi't (t) dt = G(d) = F(\phi (d)) - F(\phi(c) )  
+\end{equation}
+
+        
+
+\begin{center}
+$=F( \beta ) - F( \alpha ).$
+\end{center}
+Comparing this with (22) yields (21).
+
+
+\textbf{Example 3.3.2} To evaluate the integral
+
+
+$$
+I =  \int_{-1/\sqrt2}^{1/\sqrt2} (1 -2  x^{2}) (1 -2  x^{2})^{-1/2} dx
+$$
+
+we let 
+
+$$
+f(x) = (1 -2  x^{2}) (1 -2  x^{2})^{-1/2} , -1/\sqrt 2 \leq x \leq 1/\sqrt 2 , 
+$$
+
+and 
+
+$$
+x = \phi(t) = sin(t) , -\pi/4 \leq t \leq \pi/4. 
+$$
+
+
+Then $phi (t) = cos \backslash t $ and 
+
+% says missing $ and {  but it correctly shows in pdf 
+% I made it look like system of euations 
+\begin{equation*}
+\begin{cases}
+    I =  \int_ {-1\sqrt2}^{1\sqrt2}  f(x) dx  =  \int_{-\pi/4}^{\pi/4} f(sint) cos\ t \ dt \\
+= \int_{-\pi/4}^{\pi/4} (1-2sin^2 t)(1-2sin^2 t)^{-1/2} cos \ t  \ dt.  \\
+(1-2sin^2 t)^{1/2} =    \\
+
+cost,-\pi/4 \leq t \leq \pi/4 
+
+\end{cases}
+\end{equation*}
+
+
+
+
+
+
+
+and 
+
+$$
+1-2sin^2 t = cos2t,
+$$
+
+(23) yields 
+
+
+$$
+I  =  \int_{-\pi/4}^{\pi/4} x  cos2\ tdt = \frac{sin2t}{2} \bigg|_{-\pi/4}^{\pi/4} =1.
+$$
+
+
+
+\textbf{Example 3.3.3} To evaluate the integral
+
+$$
+I  =  \int_{0}^{5\pi}   \frac{sin\ t }{2 + cos \ t } 
+$$
+ 
+ we take $\phi (t) = cost.$ Then $\phi' (t) = -sin \ t $
+
+
+
+$$
+I  =  -\int_{0}^{5\pi}   \frac{\phi'(t) }{2 + \phi(t) } dt =  - \int_{0}^{5\pi}f(\phi(t)) \phi'(t)dt , 
+$$
+
+
+where 
+$$
+f(x) = \frac{1}{2+x}.
+$$
+
+
+
+\newpage
+\begin{flushright}
+Section 4.1 Sequences of Real Numbers 189
+\end{flushright}
+
+\begin{proof}
+ The existence and uniqueness of $\bar{s}$ and  $\underline{s}$  follow from \ref{t4112} and \ref{d221} If $\bar{s}$  and $\underline{s}$ are both finite, then \ref{a16} and \ref{a18} imply that
+\end{proof}
+
+$$
+\underline{s} - \epsilon  < \bar{s} + \epsilon
+$$
+
+for every $\epsilon > 0 $, which implies (21).If $\underline{s} = - \infty $ or $\bar{s} = \infty $, then(21) is obvious.If $\underline{s} = \infty $ or  $\bar{s} = \infty $, then (21) follows immediately from Definition 4.1.10.
+
+
+\textbf{Example 4.1.13}
+
+
+$$
+\overline{\lim_{n \rightarrow \infty }}  r^n = 
+\begin{cases}
+\infty , & |r|>1,\\
+1, & |r|=1,\\
+0, & |r|<1;
+\end{cases} 
+$$
+
+and
+
+$$
+\underline{\lim_{n \rightarrow \infty }}  r^n =  
+\begin{cases}
+\infty , & r>1,\\
+1, & r=1,\\
+0, & |r|<1, \\
+-1 ,& r= -1, \\
+-\infty,& r<-1.
+\end{cases} 
+$$
+Also,
+
+
+$$
+\overline{\lim_{n \rightarrow \infty }}  n^2 =   
+\underline{\lim_{n \rightarrow \infty }} n^2 = \infty,
+$$
+
+$$
+\overline{\lim_{n \rightarrow \infty }} (-1)^n (1- \frac{1}{n}) = 1 , \underline{\lim_{n \rightarrow \infty }} (-1)^n (n- \frac{1}{n}) = -1,
+$$
+and
+$$
+\overline{\lim_{n \rightarrow \infty }}[1+(-1)^n] n^2 = \infty , 
+\underline{\lim_{n \rightarrow \infty }} [1+(-1)^n] n^2 =0.
+$$
+
+\begin{theorem}\label{t4112}
+If $\{s_n\}$ is a sequence of real numbers ,then 
+\end{theorem}
+
+\begin{equation*}\label{a22}
+\lim_{n \rightarrow \infty}  s_n = s \eqno(22)
+\end{equation*}
+
+if and only if 
+
+\begin{equation*}\label{a23}
+\overline{\lim_{n \rightarrow \infty}}  s_n  =
+\underline{\lim_{n \rightarrow \infty}}  s_n =  s. \eqno(23)
+\end{equation*}
+
+\begin{proof}
+If $s = \pm \infty $, the equivalence of (\ref{a22}) and (\ref{a23}) follows immediately from their
+definitions. If  $\lim_{n \rightarrow \infty }  S_n = s$ (finite), then Definition 4.1.1 implies that (16)–(19)
+hold with $\overline{s} $ and $underline{s}$ replaced by $s$. Hence, (\ref{a23}) follows from the uniqueness of $\overline{s} $ and  $underline{s}$. For the
+converse, suppose that s D s and let s denote their common value. Then \ref{a16} and \ref{a18} imply that 
+\end{proof}
+
+
+
+$$
+ s -  \epsilon  < s_n < s +  \epsilon 
+$$
+
+for large n, and (22) follows from Definition 4.1.1 and the uniqueness of $lim_{n \rightarrow \infty} s_n$ \ref{t219}.
+
+\end{flushleft}

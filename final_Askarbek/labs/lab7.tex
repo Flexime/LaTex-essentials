@@ -1,0 +1,191 @@
+
+\chapter{Lab7}
+
+%\title{A Data Mining Approach for Visual and Analytical
+%Identification of Neurorehabilitation Ranges in Traumatic
+%Brain Injury Cognitive Rehabilitation}
+%\author{Alejandro García-Rudolph^\ref{l1} \ref{l2} \ref{l3}  and Karina Gibert^\ref{l4}}
+%\date{2014}
+
+
+
+\begin{flushleft}
+\begin{enumerate}
+\item Institut Guttmann, Institut Universitari de Neurorehabilitacio adscrit a la UAB, Badalona, Barcelona, Spain \label{l1}
+\item Universitat Autonoma de Barcelona, Bellaterra, Cerdanyola del Vall ` es, Spain \label{l2}
+\item Fundacio Institut dInvestigaci  o en Ci  encies de la Salut Germans Trias i Pujol, Badalona, Barcelona, Spain\label{l3}
+\item Departament d’Estad´ıstica i Investigacio Operativa, Universitat Polit ´ ecnica de Catalunya (BarcelonaTech), Jordi Girona
+08034 Barcelona, Spain\label{l4}
+\end{enumerate}
+
+Correspondence should be addressed to Alejandro Garc´ıa-Rudolph; alejandropablogarcia@gmail.com \newline
+
+Received 2 January 2015; Accepted 23 February 2015 \newline
+
+Academic Editor: Francisco Solis \newline
+
+
+
+Copyright \copyright 2015 A. Garc´ıa-Rudolph and K. Gibert. This is an open access article distributed under the Creative Commons
+Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is
+properly cited.\newline 
+Traumatic brain injury (TBI) is a critical public health and socioeconomic problem throughout the world. Cognitive rehabilitation
+(CR) has become the treatment of choice for cognitive impairments after TBI. It consists of hierarchically organized tasks that
+require repetitive use of impaired cognitive functions. One important focus for CR professionals is the number of repetitions and
+the type of task performed throughout treatment leading to functional recovery. However, very little research is available that
+quantifies the amount and type of practice. The Neurorehabilitation Range (NRR) and the Sectorized and Annotated Plane (SAP)
+have been introduced as a means of identifying formal operational models in order to provide therapists with decision support
+information for assigning the most appropriate CR plan. In this paper we present a novel methodology based on combining SAP
+and NRR to solve what we call the Neurorehabilitation Range Maximal Regions (NRRMR) problem and to generate analytical
+and visual tools enabling the automatic identification of NRR. A new SAP representation is introduced and applied to overcome
+the drawbacks identified with existing methods. The results obtained show patterns of response to treatment that might lead to
+reconsideration of some of the current clinical hypotheses.
+\end{flushleft}
+
+
+
+
+
+\newpage
+
+\twocolumn{
+
+\section{Introduction} 
+
+\normalsize
+
+
+Traumatic brain injury (TBI) is a critical public health and
+socioeconomic problem throughout the world. Although
+high-quality prevalence data are scarce, it is estimated that
+in the USA around 5.3 million people are living with a TBIrelated disability, and in the European Union approximately
+7.7 million people who have experienced a TBI have disabilities \cite{biblref1}.
+TBI is considered a silent epidemic, because society is
+largely unaware of the magnitude of the problem \cite{biblref2}. The
+World Health Organization predicts that, by the year 2020,
+TBI and road traffic accidents will be the third greatest cause
+of disease and injury worldwide \cite{biblref3}.
+
+
+The consequences of TBI vary from case to case but
+can include motor, cognitive, and behavioral deficits in the
+patient, disrupting their daily life activities at personal, social,
+and professional levels. The most important cognitive deficits
+after suffering a TBI are those related to attention, decrease
+in memory and learning capacity, worsening of the capacity
+to schedule and to solve problems, a reduction in abstract
+thinking, communication problems, and a lack of awareness
+of one’s own limitations. These cognitive impairments hamper the path to functional independence and a productive
+lifestyle for the person with TBI.
+New techniques of early intervention and the development of intensive TBI care have improved the survival rate
+noticeably. However, despite these advances, brain injuries
+
+
+still have no surgical or pharmacological treatment to reestablish lost functions \cite{biblref4}. In this context, cognitive rehabilitation
+(CR) is defined as a process whereby people with brain
+injury work together with health service professionals and
+others to remedy or alleviate cognitive deficits arising from
+a neurological injury \cite{biblref5}.
+
+
+The structure of the paper is as follows: \ref{sec1} briefly
+presents the state of the art and the starting point of
+the proposal. \ref{sec2} introduces the proposed analysis
+methodology and \ref{sec3} its application to the CR context;
+\ref{sec4} presents a discussion of the obtained results and a
+comparison with the previous and \ref{sec5} the conclusions
+and future lines of research.
+
+
+The process by which neuronal circuits are modified by
+experience, learning, or injury is referred to as neuroplasticity
+\cite{biblref7}.
+While task repetition is not the only important feature,
+it is becoming clear that neuroplastic change and functional
+improvement occur after a number of specific tasks are
+performed but do not occur with other numbers \cite{biblref8,biblref9} Thus,
+one important focus for rehabilitation professionals is the
+number of repetitions and the type of task performed during
+treatment. However, there is very little research to quantify
+the amount and type of practice that occurs during clinical
+rehabilitation treatment and its relationship to rehabilitation
+outcomes \cite{biblref10,biblref11}.
+
+
+
+\section{State of the Art} 
+\label{sec1}
+
+
+There is a common belief that CR is effective for TBI patients,
+based on a large number of studies and extensive clinical
+experience. Different statistical methodologies and predictive
+data mining methods have been applied to predict clinical
+outcomes of the rehabilitation of patients with TBI \cite{biblref14,biblref16} Most of these studies focus on determining survival,
+predicting disability or the recovery of patients, and looking
+for the factors that better predict the patient’s condition after
+TBI
+
+\section{Materials and Methods}
+\label{sec2}
+The proposed methods present two strategies for the analytical and graphical identification and visualization of NRR and
+non-NRR based on the notion of SAP as introduced in \cite{biblref12}
+and on the classical MER problem, respectively.
+
+\textit{3.1.Sectorized} and Annotated Plane (SAP). Given three
+variables $y$, $x_1$, and $x_2$, where $y$ is a qualitative response
+variable, with values ${\{y_1,y_2,...}\}$, and $x_1, y_2$ numerical
+explanatory variables, the SAP is a 2-dimensional plot with
+$x_1$ in the axis, $x2$ in the -axis and rectangular regions
+with constant $y$ displayed and labeled with $y$ values as
+outlined in Figure 1. An SAP is therefore a graphical support
+tool aimed at visualization, where the response variable is
+constant in certain regions of the $ x_1  \backslash \text{times}  y_2 $ space. Eventually,
+allowing a relaxation of strict constant in the marked
+regions, the SAP might include an indicator of region purity,
+adding the probability of occurrence of the labeling value.
+
+\section{Application and Results}
+\label{sec3}
+\textit{4.1 Clinical Context. This work is based on the same context
+as in \cite{biblref12}, the Neuropsychological Department of Institut
+Guttmann Neurorehabilitation Hospital (IG). The Information Technology framework for CR treatments in this clinical
+setting is therefore the PREVIRNEC \copyright platform \cite{biblref31}. It is
+specifically designed to operate CR plans assigned to subjects,
+as well as to manage precise follow-up information about the
+process.}
+
+\section{Discussion}
+\label{sec4}
+
+This work aims to identify the conditions in which performing a certain cognitive rehabilitation task (or a group of
+tasks) guarantees better potential for the activation of brain
+plasticity and therefore helps bring about improvements in
+the assessed cognitive functions after CR treatment. As this
+research takes our previous research as a starting point, the
+results comparison is provided below and the pros and cons
+are discussed
+
+\section*{Conclusions and Future Work}
+\label{sec5}
+
+This work builds on our previous contribution towards the
+design, implementation, and execution of personalized, predictable, and data-driven CR programs. We wish to identify
+NRR for cognitive rehabilitation tasks that lead to patient
+improvement.
+\section*{Conflict of Interests}
+\label{sec6}
+No competing financial interests exist
+\section{Acknowledgments}
+\label{sec7}
+
+This research was supported by the Ministry of Science and
+Innovation (Spain) INNPACTO Program (PT NEUROCONTENT, Grant no. 300000-2010-30), Ministry of Education
+Social Policy and Social Services (Spain) IMSERSO Program
+(PT COGNIDAC, Grant no. 41/2008), MARATO TV3 Foun- ´
+dation (PT: Improving Social Cognition and Meta-Cognition
+in Schizophrenia: A Tele-Rehabilitation Project, Grant no.
+091330), EU CIP-ICT-PSP-2007-1 (PT: CLEAR, Grant no.
+224985), Spanish Ministry of Economy and Finance (PT
+COGNITIO, Grant no. TIN2012 38450), and EU-FP7-ICT
+(PT PERSSILAA Grant no. 610359). }

@@ -1,0 +1,95 @@
+\chapter{Lab3}
+
+\begin{multicols}{2}
+
+Section 2.2 Continuity 67
+
+  Applied to Example 2.2.16, Corollary 2.2.13 implies that the function $g(x) =  cos1 \backslash x$  is uniformly continuous on $[\rho ,1]$ if  $0<\rho < 1.$
+
+
+
+        More About Monotonic Functions
+
+\begin{theorem} \label{t220}
+ implies that if f is monotonic on an interval I , then f is either continuous
+ or has a jump discontinuity at each x0 in I . This and \ref{t2214} provide the key to
+ the proof of the following theorem.
+\end{theorem}
+
+\begin{theorem}\label{t221}
+ If f is monotonic and non constant on $[a b]$ , then f is continuous on
+$[a, b]$  if and only if its range  $\tilde{R} _f = \big\{f(x) \parallel x  \in(a,b)  \big\} $ is the closed interval with endpoints $f(a)$ and $f(b).$
+\end{theorem}
+
+
+
+
+\begin{proof}
+We assume that f is non decreasing, and leave the case where f is non increasing to you (Exercise 34). \ref{t220} implies that the set$ \tilde{R}_f $
+is a
+subset of the open interval $(f(a+),f(b-)).$ Therefore,
+\end{proof}
+
+
+\begin{equation}\label{a15}
+\begin{gathered}
+R_f = \big\{f(a)\big\} \cup \tilde{R}_f \cup  \big\{f(b)\big\}  \subset  \big\{f(a) \big\}  \cup  \big\{f(a+)           \\ \big\},\big\{f(b-)\big\} \cup \big\{f(b)\big\}
+\end{gathered}
+\end{equation}
+
+Now suppose that f is continuous on $[a,b]$. Then $f (a) = f(a+),f(b-) = f(b)$, so (\ref{a15})
+implies that$ R_f \subset [f(a),f(b)].If f(a)< \mu <f(b)$ , then \ref{t221} implies that $\mu = f(x) for some x in (a, b). Hence, R_f =[f(a),f(b)].$
+
+
+For the converse, suppose that $R_f = [f(a),f(b)].$ Since $f(a) \leq f(a+) and f(b-) \leq f(b),$ \ref{a15} implies that $f(a) = f(a+) and f(b-).$ We know from \ref{t219} that if f is non-decreasing and $a < x_0 < b$ ,then
+
+
+$$f(x_0 -) \leq f(x_0) \leq f(x_0 -).$$
+
+
+If either of these inequalities is strict, $Rf$ cannot be an interval. Since this contradicts our
+assumption.$f(x_0 -) = f(x_0) = f(x_0 +_)$.Therefore,f is continuous at $x_0$(Exercise(2).
+We can now conclude that f is continuous on $[a,b]$.
+
+
+
+
+\ref{t221} implies the following theorem
+
+
+
+\begin{theorem}\label{t2215}
+ Suppose that f is increasing and continuous on $[a, b]$ and let $f(a)= c$ and $f (b) = d $ Then there is a unique function g defined on $[c,d]$ such that
+\end{theorem}
+
+
+
+
+
+
+\begin{equation}\label{a16}
+g(f(x)) = x, a \leq x \leq b,
+\end{equation}
+
+and 
+
+\begin{equation}\label{a17}
+f(g(y) = y,\ c \leq y \leq d.
+\end{equation}
+
+
+Moreover, g is continuous and increasing on $[c,d]$.
+
+
+
+\begin{proof}
+We first show that there is a function g satisfying (\ref{a16}) and (\ref{a17}). Since f is continuous, \ref{t2215} implies that for each $y_0$ in $[c,d]$ there is an $x_0$ in $[a, b]$ such that
+\end{proof}
+
+
+
+\begin{equation}\label{a18}
+f(x_0) = y(0),
+\end{equation}  
+
+\end{multicols}
